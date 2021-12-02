@@ -13,9 +13,9 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"],
     alias: {
-      '@routes':path.resolve(__dirname, 'src/routes/'),
-      '@components':path.resolve(__dirname, 'src/components/'),
-      '@pages':path.resolve(__dirname, 'src/pages/'),
+      '@routes': path.resolve(__dirname, 'src/routes/'),
+      '@components': path.resolve(__dirname, 'src/components/'),
+      '@pages': path.resolve(__dirname, 'src/pages/'),
     },
   },
   module: {
@@ -38,6 +38,10 @@ module.exports = {
       {
         test: /\.(css|scss)$/,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        type: "asset",
       },
     ],
   },

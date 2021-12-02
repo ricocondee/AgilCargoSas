@@ -1,14 +1,21 @@
 import React from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
+import Login from '../pages/Login'
+import Home from '@pages/Home'
+import Layout from '../containers/Layout'
 
 const App = () => {
     return (
-        <div className="col-auto p-4 bg-primary text-center">
-            <h1 className="">Agil Cargo</h1>
-            <p>Estamos en construccion.</p>
-            <br/>
-            <h1 className="text-danger xl">505</h1>
-        </div>
+    <BrowserRouter>
+        <Layout>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/login" component={Login} />
+            </Switch>
+        </Layout>
+    </BrowserRouter>            
+        
     );
 }
 
