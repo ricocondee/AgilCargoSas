@@ -1,0 +1,40 @@
+:root{
+    --my-primary-color: #023047;
+    --my-secondary-color: #ffb703;
+    --my-light-color: #e8e8e8;
+}
+
+body{
+    background-color: var(--my-light-color);
+}
+
+
+
+h1,p,strong{
+    color: var(--my-primary-color);
+}
+
+.my-button{
+    background-color: var(--my-secondary-color);
+}
+
+.all-contain{
+    width: 100%;
+}
+
+.call-to-action{
+    width: 50%;
+}
+
+.my-img-contain{
+    width: 50%;
+    margin: 0;
+    display: flex;
+}
+
+.my-img{
+    position: relative;
+    top: 70%;
+    width: 300px;
+    z-index: 1;
+}

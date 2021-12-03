@@ -3,7 +3,7 @@ import React from 'react';
 const Login = () => {
     return (
         <div className="container-fluid bg-secondary">
-            <form action="form-floating mb-5 border-box">
+            <form action="" className="">
                 <h1>Iniciar Sesion</h1>
                 <label className="form-label">Email</label>
                 <input type="text" className="form-control" id="floatingInputValue" placeholder="tu@correo.com"/>

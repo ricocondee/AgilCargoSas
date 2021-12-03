@@ -1,7 +1,64 @@
-header{
-    background-color: #023047;
+:root{
+    --my-primary-color: #023047;
+    --my-secondary-color: #ffb703;
+    --my-light-color: #e8e8e8;
 }
 
-.link{
-    color: #e8e8e8;
+
+
+header{
+    height: 92px;
+    background-color: var(--my-primary-color);
+}
+
+.ul-container{
+    display: grid;
+    padding: 50px 0 0 0;
+}
+
+.nav-header ul{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-header ul li{
+    padding: 0 50px 0 50px;
+}
+
+.nav-header ul li a:hover{
+    color: var(--my-secondary-color);
+}
+
+.nav-header ul li a{
+    text-decoration: none;
+    color: var(--my-light-color);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 225px;
+    position: relative;
+    top: -26px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-login{
+    padding: 15px 30px 15px 30px;
+    position: relative;
+    top: -25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: var(--my-secondary-color);
+    color: var(--my-primary-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
 }
