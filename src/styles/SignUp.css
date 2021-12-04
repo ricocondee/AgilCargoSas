@@ -1,0 +1,37 @@
+:root{
+    --primary-color: #023047;
+    --secondary-color: #ffb703;
+    --light-color: #e8e8e8;
+}
+
+.container-signup{
+    height: calc(100vh - 92px - 130px);
+}
+
+.photos{
+    position: relative;
+    display: inline-block;
+}
+
+.img-register{
+    position: absolute;
+    z-index: -10;
+    height: 710px;
+    margin-left: 14%;
+    
+}
+
+.img-register2{
+    position: absolute;
+    height: 650px;
+    z-index: -100;
+}
+
+form{
+    width: 50vw;
+    float: right;
+}
+
+button{
+    background-color: var(--secondary-color);
+}

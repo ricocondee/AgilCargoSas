@@ -18,7 +18,9 @@ const Footer = () => {
                 </ul>
             </div>
 
-            &copy; Copyright 2021, Grupo 4
+            <div className="copy">
+                &copy; Copyright 2021, Grupo 4
+            </div>
 
             <div className="container-social-media">
                 <ul className="list-social-media">
