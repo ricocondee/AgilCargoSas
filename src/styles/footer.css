@@ -11,17 +11,8 @@ footer{
     flex-wrap          : nowrap;
     align-items        : center;
     background-color   : var(--primary-color);
-    color              : #fff;
-    font-size          : 1.2rem;
-}
-
-li a{
-    color: var(--light-color);
-    text-decoration: none;
-}
-
-li a:hover{
-    color: var(--light-color)
+    color              : var(--light-color);
+    font-size          : 1.5rem;
 }
 
 /* contacts */
