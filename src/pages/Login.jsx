@@ -1,18 +1,29 @@
 import React from 'react';
+import model2 from '../assets/model2.png'
+import behindPoints from '../assets/behindPoints.png'
+import '../styles/Login.css'
 
 const Login = () => {
     return (
-        <div className="container-fluid bg-secondary">
-            <form action="" className="">
-                <h1>Iniciar Sesion</h1>
-                <label className="form-label">Email</label>
-                <input type="text" className="form-control" id="floatingInputValue" placeholder="tu@correo.com"/>
-                <label className="form-label">Password</label>
-                <input type="password" className="form-control" placeholder="* * * * * * * *"/>
-                <input type="submit" className="btn btn-success mt-3 mb-3 ps-5 pe-5 rounded-pill"/>
-                <p>¿Olvidaste tu contraseña?</p>
-                <button className="btn btn-primary">Registrarse</button>
+        <div className="login-page-contain">
+           <div className="form-contain">
+           <form action="" className="">
+                <h1 className="title-login">Iniciar Sesion</h1>
+                <label className="text-email">Email</label>
+                <input type="text" className="campo-email" id="floatingInputValue" placeholder="tu@correo.com"/>
+                <label className="text-password">Contraseña</label>
+                <input type="password" className="campo-password" placeholder="* * * * * * * *"/>
+                <i className="bi bi-eye-fill"></i>
+                <i className="bi bi-eye-slash-fill"></i>
+                <input type="submit" className="btn-send" value="Ingresar"/>
+                <p className="you-forgot-pass">¿Olvidaste tu contraseña?</p>
+                <button className="">Registrarse</button>
             </form>
+           </div>
+           <div className="model-contain">
+               <img src={model2} alt="Modelo sonriendo" className="model-2" />
+               <img src={behindPoints} alt="" className="behind-figures" />
+           </div>
         </div>
     );
 }
