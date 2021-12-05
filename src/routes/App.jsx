@@ -4,7 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Login from '@pages/Login'
 import Home from '@pages/Home'
-import Layout from '../containers/Layout'
+import Track from '@pages/Track'
+import Layout from '@containers/Layout'
 
 const App = () => {
     return (
@@ -13,6 +14,7 @@ const App = () => {
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route exact path='/login' component={Login} />
+                <Route exact path='/track-shipping' component={Track}/>
             </Switch>
         </Layout>
     </BrowserRouter>            

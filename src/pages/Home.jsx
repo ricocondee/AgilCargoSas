@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/Home.css'
-import model1 from '../assets/model1.png';
-import puntosVertical from '../assets/puntosVertical.svg';
-import puntosHorizontal from '../assets/puntosHorizontal.svg';
+import '@styles/Home.css'
+import model1 from '@assets/model1.png';
+import puntosVertical from '@assets/puntosVertical.svg';
+import puntosHorizontal from '@assets/puntosHorizontal.svg';
 
 const Home = () => {
     return (

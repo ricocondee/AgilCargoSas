@@ -47,8 +47,9 @@ h1,p{
 
 .call-to-action{
     width: 60%;
-
-    /* padding: 30px 0 10px 80px; */
+    position: absolute;
+    left: 5%;
+    top: 16%;
 }
 
 .my-img-contain{
@@ -86,6 +87,7 @@ h1,p{
     }
 
     .call-to-action{
+        width: 45%;
         position: absolute;
         top: 25%;
         left: 5%;
