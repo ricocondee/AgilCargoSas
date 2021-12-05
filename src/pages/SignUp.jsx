@@ -8,35 +8,35 @@ const SignUp = () => {
         <div className="container-signup">
             <div className="photos">
                 <img src={model2} alt="img" className="img-register"/>
-                <img src={behindPointsToModel2} alt="behinds Points" className="img-register2"/>
+                <img src={behindPointsToModel2} alt="behinds Points" className="img-behindpoints2"/>
             </div>
 
-            <div>
-                <form action="/hola" className="">
-                    <h1>Registrate</h1>
+            <div className="form-contain">
+                <form action="" className="">
+                    <h1 className="title-signup">Registrate</h1>
                     <div className="inputs">
-                        <label>
-                            Nombre
-                            <input type="text" name="name"/>
-                        </label>
-
-                        <label>
-                            E-mail
-                            <input type="email" name="email"/>
-                        </label>
+                        <div className="labels">
+                            <label className="label-name">Nombre</label>
+                            <input type="text" name="name" className="name" placeholder="Nombre y Apellidos"/>
+                        </div>
+                            
+                        <div className="labels">
+                            <label className="label-email">E-mail</label>
+                                <input type="email" name="email" className="email" placeholder="tu@correo.com"/>
+                        </div>
                         
-                        <label>
-                            Contraseña
-                            <input type="password" name="password"/>
-                        </label>
+                        <div className="labels">
+                            <label className="label-pass">Contraseña</label>
+                            <input type="password" name="password" className="pass" placeholder="*****************"/>
+                        </div>
 
-                        <label>
-                            confirmar Contraseña
-                            <input type="password" />
-                        </label>
+                        <div className="labels">
+                            <label className="label-pass">confirmar Contraseña</label>
+                            <input type="password" className="pass" placeholder="*****************"/>
+                        </div>
                     </div>
 
-                    <button>Registrarme</button>
+                    <button className="btn-signup">Registrarme</button>
                 </form>
             </div>
         </div>

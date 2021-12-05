@@ -5,6 +5,8 @@
 }
 
 footer{
+    position           : relative;
+    z-index            : 1000;
     height             : 130px;
     display            : flex;
     justify-content    : space-between;
@@ -68,4 +70,23 @@ footer{
 .bi-envelope-fill, .bi-geo-alt-fill, .bi-telephone-fill{
     font-size: 1.2rem;
     color: var(--secondary-color);
+}
+
+@media only screen and (max-width:1366px) {
+    footer{
+        width: 100%;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+    .container-contacts{
+        padding-top: 25px;
+    }
+    
+    .container-social-media{
+        padding-top: 25px;
+    }
+
+    .copy {
+        padding-top: 25px;
+    }
 }

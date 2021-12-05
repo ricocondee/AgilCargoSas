@@ -16,7 +16,7 @@ h1{
 .title{
     padding-bottom: 25px;
 }
-.texto-fill{
+.text-fill{
     font-size: 1.4rem;
     padding-bottom: 25px;
 }
@@ -42,7 +42,7 @@ h1,p{
 }
 
 .all-contain{
-    min-height: calc(100vh - 92px - 130px);
+    min-height: calc(100vh - 110px - 130px);
 }
 
 .call-to-action{

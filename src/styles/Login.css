@@ -16,6 +16,7 @@
 .model-contain{
     position: relative;
 }
+
 .model-2{
     position: fixed;
     width: 260px;
@@ -23,6 +24,7 @@
     left: 15%;
     top: 15%;
 }
+
 .behind-figures{
     position: fixed;
     width: 450px;
@@ -95,6 +97,7 @@
         left: 15%;
         top: 15%;
     }
+
     .behind-figures{
         top: 25%;
         left: 6%;
@@ -107,12 +110,15 @@
         left: 1%;
         top: 10%;
     }
+
     .title-login{
         font-size: 4rem;
     }
+
     .text-email, .text-password{
         font-size: 2rem;
     }
+
     .campo-email,.campo-password{
         width: 500px;
     }
