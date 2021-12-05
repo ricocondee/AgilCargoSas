@@ -1,0 +1,78 @@
+:root{
+    --my-primary-color  : #023047;
+    --my-secondary-color: #ffb703;
+    --my-light-color    : #e8e8e8;
+}
+
+/* container */
+.container-signup{
+    height              : calc( 100vh - 92px - 130px);
+}
+
+/* Title form */
+.title-signup{
+    text-transform      : uppercase;
+    margin-top          : 70px;
+    margin-bottom       : -10px;
+}
+
+/* images */
+.photos{
+    position            : relative;
+}
+
+.img-register{
+    position            : fixed;
+    width               : 415px;
+    z-index             : 1;
+    left                : 15%;
+    top                 : 15%;
+}
+
+.img-behindpoints2{
+    position            : fixed;
+    width               : 700px;
+    height: 615px;
+    top                 : 20%;
+    left                : 7%;
+}
+
+/* label forms */
+.labels{
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.label-email, .label-pass, .label-name{
+    font-weight         : bold;
+    font-size           : 1.5rem;
+    color               : var(--my-primary-color);
+}
+
+/* inputs */
+.pass, .email, .name{
+    background-color    : var(--my-light-color);
+    border              : 5px solid var(--my-secondary-color);
+    border-radius       : 50px;
+    display             : grid;
+    text-align          : center;
+    color               : var(--my-primary-color);
+    outline             : none;
+    box-sizing          : border-box;
+    box-shadow          : 0 4px 10px -2px rgba(128, 128, 128, 0.76);
+    padding             : 5px 0 5px 0;
+    margin              : 10px;
+    width               : 400px;
+}
+
+.btn-signup{
+    margin              : 20px 0 20px 0;
+    font-weight         : bold;
+    text-transform      : uppercase;
+    font-size           : 1.5rem;
+    padding             : 15px 50px 15px 50px;
+    border-radius       : 50px;
+    border              : none;
+    color               : var(--my-primary-color);
+    background-color    : var(--my-secondary-color)
+}

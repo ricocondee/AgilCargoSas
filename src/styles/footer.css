@@ -6,7 +6,7 @@
 
 footer{
     position           : relative;
-    z-index            : 2;
+    z-index            : 1000;
     height             : 130px;
     display            : flex;
     justify-content    : space-between;
@@ -21,11 +21,17 @@ footer{
 .container-contacts{
     width              : 400px;
     display            : inline-block;
+    
+}
+
+.container-contacts ul{
+    margin: 0;
 }
 
 /* text copyright */
 .copy{
     width              : 400px;
+    text-align: center;
     display            : inline-block;
 }
 
@@ -36,33 +42,51 @@ footer{
     float              : right;
 }
 
+.container-social-media ul{
+    margin: 0;
+    padding: 0;
+}
+
+.list-social-media{
+    width              : 400px;
+    display            : inline-flex;
+    justify-content    : right;
+    font-size          : 3rem;
+}
 
 .list-contacts, .list-social-media{
     list-style-type: none;
 }
 
-
-.list-social-media{
-    display: inline-flex;
-    font-size: 2em;
+.list-social-media li{
+    margin-right: 15px;
 }
 
+.bi-twitter{
+    margin-right: 50px;
+}
 
-/* icons */
+/* icons contacts */
 .bi-envelope-fill, .bi-geo-alt-fill, .bi-telephone-fill{
     font-size: 1.2rem;
     color: var(--secondary-color);
 }
 
-.list-social-media li{
-    margin: 9px;
-}
+@media only screen and (max-width:1366px) {
+    footer{
+        width: 100%;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+    .container-contacts{
+        padding-top: 25px;
+    }
+    
+    .container-social-media{
+        padding-top: 25px;
+    }
 
-li a{
-    color: var(--light-color);
-    text-decoration: none;
-}
-
-li a:hover{
-    color: var(--light-color)
+    .copy {
+        padding-top: 25px;
+    }
 }
