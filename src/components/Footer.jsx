@@ -7,13 +7,13 @@ const Footer = () => {
             <div className="container-contacts">
                 <ul className="list-contacts">
                     <li>
-                        <i class="bi bi-envelope-fill"></i>&nbsp;&nbsp;<a href="mailto:Info@agilcargo.com" target="_blank">Info@agilcargo.com</a> 
+                        <i className="bi bi-envelope-fill"></i>&nbsp;&nbsp;<a href="mailto:Info@agilcargo.com" target="_blank">Info@agilcargo.com</a> 
                     </li>
                     <li>
-                        <i class="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Calle 0 #00-00 Colombia
+                        <i className="bi bi-geo-alt-fill"></i>&nbsp;&nbsp;Calle 0 #00-00 Colombia
                     </li>
                     <li>
-                        <i class="bi bi-telephone-fill"></i>&nbsp;&nbsp;+57 123 456 7890
+                        <i className="bi bi-telephone-fill"></i>&nbsp;&nbsp;+57 123 456 7890
                     </li>
                 </ul>
             </div>
@@ -25,13 +25,13 @@ const Footer = () => {
             <div className="container-social-media">
                 <ul className="list-social-media">
                     <li>
-                        <i class="bi bi-instagram"></i>
+                        <i className="bi bi-instagram"></i>
                     </li>
                     <li>
-                        <i class="bi bi-linkedin"></i>
+                        <i className="bi bi-linkedin"></i>
                     </li>
                     <li>
-                        <i class="bi bi-twitter"></i>
+                        <i className="bi bi-twitter"></i>
                     </li>
                 </ul>
             </div>
