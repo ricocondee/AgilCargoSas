@@ -3,6 +3,7 @@ import model4 from '@assets/model4.png'
 import '@styles/Track.css'
 import VerticalPoints from '@assets/puntosVertical.svg'
 import HorizontalPoints from '@assets/puntosHorizontal.svg'
+import Button from '@components/Button'
 
 const Track = () => {
     return (
@@ -12,7 +13,7 @@ const Track = () => {
                     <h1 className="title-track">¿Quieres saber donde est&aacute; tu env&iacute;o?</h1>
                     <input type="number" className="campo-track" placeholder="Ingresa el n&uacute;mero de gu&iacute;a de tu env&iacute;o."/>
                     <i className="bi bi-search"></i>
-                    <input type="button" value="Rastrear" className="btn-track"/>
+                    <Button/>
                 </form>
             </div>
             
