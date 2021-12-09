@@ -1,0 +1,39 @@
+:root{
+    --my-primary-color: #023047;
+    --my-secondary-color: #ffb703;
+    --my-light-color: #e8e8e8;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 5px; 
+}
+
+.menu{
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    top: 92px;
+    left: 84%;
+    z-index: 2;
+    display: grid;
+    box-sizing: border-box;
+    border-radius: 0 0 20px 20px;
+    background-color: #2D5365;
+    text-decoration: none;
+    color: var(--my-light-color);
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: var(--my-light-color);
+    font-weight: bold;
+
+}
+
+.bi-person, .bi-inbox, .bi-box-arrow-in-left{
+    color: var(--my-secondary-color);
+    font-size: 1.4rem;
+    text-align: center;
+    margin-right: 10px;
+}

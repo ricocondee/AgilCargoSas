@@ -18,12 +18,11 @@ h1{
 }
 .text-fill{
     font-size: 1.4rem;
-    padding-bottom: 25px;
 }
 .strong{
     font-weight: 700;
     font-size: 1.8rem;
-    padding-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 h1,p{
@@ -38,31 +37,32 @@ h1,p{
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--my-primary-color);
-    display: flex;
+    text-decoration: none;
 }
 
 .all-contain{
-    min-height: calc(100vh - 110px - 130px);
+    min-height: calc(100vh - 92px - 130px);
+    height: 100vh;
 }
 
 .call-to-action{
-    width: 60%;
-    position: absolute;
+    width: 50%;
+    position: relative;
+    top: 20%;
     left: 5%;
-    top: 16%;
 }
 
 .my-img-contain{
     margin: 0;
     display: flex;
-    position: fixed;
+    position: absolute;
     z-index: 1;
-    top: 16%;
-    left: 65%;
+    top: 20%;
+    left: 50%;
 }
 
 .my-img{
-    width: 420px;
+    width: 600px;
 }
 
 .pun-vertical{
@@ -70,7 +70,7 @@ h1,p{
     height: 100px;
     z-index: 0;
     top: 10%;
-    left: 10%;
+    left: 13%;
 }
 
 .pun-horizontal{
@@ -89,7 +89,7 @@ h1,p{
     .call-to-action{
         width: 45%;
         position: absolute;
-        top: 25%;
+        top: 35%;
         left: 5%;
         
     }
@@ -105,11 +105,11 @@ h1,p{
     }
 
     .my-img-contain{
-        top: 18%;
-        left: 55%;
+        top: 23.5%;
+        left: 50%;
     }
     .my-img{
-        width: 750px;
+        width: 820px;
     }
     .pun-vertical{
         height: 150px;
@@ -120,5 +120,29 @@ h1,p{
         width: 150px;
         top: 65%;
         left: 72.5%;
+    }
+}
+
+@media only screen and (max-width:1280px) {
+    .call-to-action{
+        width: 55%;
+        top: 5%;
+        left: 25%;
+        text-align: center;
+    }
+    .strong{
+        margin-bottom: 35px;
+    }
+
+    .my-img-contain{
+        width: 40%;
+        top: 55%;
+        left: 35%;
+
+    }
+
+    .my-img{
+        min-width: 100%;
+        min-height: 100%;
     }
 }

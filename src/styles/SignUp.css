@@ -1,78 +1,165 @@
-:root{
-    --my-primary-color  : #023047;
-    --my-secondary-color: #ffb703;
-    --my-light-color    : #e8e8e8;
+:root {
+  --my-primary-color: #023047;
+  --my-secondary-color: #ffb703;
+  --my-light-color: #e8e8e8;
 }
 
 /* container */
-.container-signup{
-    height              : calc( 100vh - 92px - 130px);
+.container-signup {
+  min-height: calc(100vh - 92px - 130px);
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.signup-form-contain{
+    width: 500px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    position: relative;
+    top: 17%;
+    justify-content: center;
+    text-align: center;
+    left: 52.5%;
+    zoom: 110%;
 }
 
 /* Title form */
-.title-signup{
-    text-transform      : uppercase;
-    margin-top          : 70px;
-    margin-bottom       : -10px;
+.title-signup {
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
 }
 
 /* images */
-.photos{
-    position            : relative;
+.img-register {
+  position: absolute;
+  width: 515px;
+  z-index: 1;
+  top: 25%;
+  left: 10.5%;
 }
 
-.img-register{
-    position            : fixed;
-    width               : 415px;
-    z-index             : 1;
-    left                : 15%;
-    top                 : 15%;
-}
-
-.img-behindpoints2{
-    position            : fixed;
-    width               : 700px;
-    height: 615px;
-    top                 : 20%;
-    left                : 7%;
+.img-behindpoints2 {
+  position: absolute;
+  width: 700px;
+  top: 45%;
+  left: 6%;
 }
 
 /* label forms */
-.labels{
-    display: inline-block;
-    margin-top: 50px;
+
+.inputs{
+    box-sizing: border-box;
+    display: contents;
+    width: 420px;
+    height: 200px;
 }
 
-.label-email, .label-pass, .label-name{
-    font-weight         : bold;
-    font-size           : 1.5rem;
-    color               : var(--my-primary-color);
+.label-email,
+.label-pass,
+.label-name {
+    font-weight: bold;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+    color: var(--my-primary-color);
 }
 
 /* inputs */
-.pass, .email, .name{
-    background-color    : var(--my-light-color);
-    border              : 5px solid var(--my-secondary-color);
-    border-radius       : 50px;
-    display             : grid;
-    text-align          : center;
-    color               : var(--my-primary-color);
-    outline             : none;
-    box-sizing          : border-box;
-    box-shadow          : 0 4px 10px -2px rgba(128, 128, 128, 0.76);
-    padding             : 5px 0 5px 0;
-    margin              : 10px;
-    width               : 400px;
+.pass,
+.email,
+.name {
+    width: 480px;
+    background-color: var(--my-light-color);
+    border: 5px solid var(--my-secondary-color);
+    border-radius: 50px;
+    display: grid;
+    text-align: center;
+    color: var(--my-primary-color);
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: 1px 4px 10px -2px rgba(128, 128, 128, 0.76);
+    padding: 5px 0 5px 0;
 }
 
-.btn-signup{
-    margin              : 20px 0 20px 0;
-    font-weight         : bold;
-    text-transform      : uppercase;
-    font-size           : 1.5rem;
-    padding             : 15px 50px 15px 50px;
-    border-radius       : 50px;
-    border              : none;
-    color               : var(--my-primary-color);
-    background-color    : var(--my-secondary-color)
+.btn-signup {
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    padding: 15px 50px 15px 50px;
+    border-radius: 50px;
+    border: none;
+    color: var(--my-primary-color);
+    background-color: var(--my-secondary-color);
+    box-shadow: 1px 4px 10px -2px rgba(128, 128, 128, 0.76);
+}
+
+@media only screen and (max-width: 1366px) {
+  .img-behindpoints2 {
+    position: absolute;
+    width: 500px;
+    top: 45%;
+    left: 5%;
+  }
+
+  .img-register{
+    position: absolute;
+    width: 360px;
+    z-index: 1;
+    top: 29%;
+    left: 10%;
+  }
+
+  .signup-form-contain{
+    width: 500px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    top: 10%;
+    left: 50%;
+    zoom: initial;
+  }
+
+  .title-signup{
+    font-size: 2.5rem;
+  }
+
+  .label-email,.label-pass,.label-name{
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  .email,.pass,.name{
+      width: 100%;
+  }
+
+  .btn-signup{
+    padding: 10px 30px 10px 30px;
+  }
+}
+
+@media only screen and (max-width:1280px) {
+
+
+  .img-register{
+    width: 500px;
+    top: 20.5%;
+    left: 3%;
+  }
+
+  .img-behindpoints2{
+    width: 700px;
+    top: 40%;
+    left: -2%;
+  }
+
+  .signup-form-contain{
+    top: 25%;
+  }
 }

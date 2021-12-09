@@ -1,0 +1,227 @@
+:root{
+    --my-primary-color: #023047;
+    --my-secondary-color: #ffb703;
+    --my-light-color: #e8e8e8;
+}
+
+option{
+    background-color: var(--my-light-color)
+}
+
+.none{
+    display: none
+}
+
+.all-budget-container{
+    height: calc(100vh - 92px - 130px)
+}
+
+.budget-search-container{
+    box-sizing: border-box;
+    display: flex;
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+
+.my-form{
+    width: 100%
+}
+
+.title-budget{
+    width: 100%;
+    position:relative;
+    top: 15%;
+    left: 26%
+}
+
+.start-point, .end-point, .vehicles, .for-read-only{
+    width: 400px;
+    padding: 8px;
+    border: 5px solid var(--my-secondary-color);
+    border-radius: 50px;
+    background-color: var(--my-prumari-color);
+    outline: none;
+    text-align: center;
+    color: var(--my-primary-color)
+}
+
+.start-point{
+    position:relative;
+    right: 90%;
+    top: 36%;
+}
+.end-point{
+    position:relative;
+    top: 25%;
+}
+.vehicles{
+    position:relative;
+    top: 32.5%;
+    left: -45%;
+}
+
+
+
+.result-budget-container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.result{
+    width: 70%;
+    position: relative;
+    top: 7%;
+    left: 25%;
+}
+
+.title-result{
+    width: 50%;
+    position: relative;
+    left: 39.5%;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.for-read-only{
+    display: grid;
+    float: right;
+    margin-bottom: 25px;
+    margin-right: 25px;
+}
+
+.icon-left-one{
+    position: absolute;
+    top: 19%;
+    left: 48.5%;
+    display: flex;
+}
+.icon-left-two{
+    position: absolute;
+    top: 35.5%;
+    left: 48.5%;
+    display: flex;
+}
+
+.icon-left-tree{
+    position: absolute;
+    top: 54.5%;
+    left: 48.5%;
+    display: flex;
+}
+
+.bi-geo, .bi-geo-alt, .bi-reception-0, .bi-truck, .bi-clock, .bi-cash-coin{
+    color: var(--my-primary-color) !important;
+    font-size: 1.3rem;
+}
+
+.icon-right-one{
+    position: absolute;
+    top: 19.5%;
+    left: 93.5%;
+    display: flex;
+}
+.icon-right-two{
+    position: absolute;
+    top: 37%;
+    left: 93.5%;
+    display: flex;
+}
+
+.icon-right-tree{
+    position: absolute;
+    top: 55%;
+    left: 93%;
+    display: flex;
+}
+
+.btn-agendar{
+    background-color: var(--my-secondary-color);
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--my-primary-color);
+    padding: 20px 100px 20px 100px;
+    position: relative;
+    left: 39%;
+}
+
+.images-container{
+    position: fixed;
+    left: 5%;
+}
+
+.model3{
+    width: 300px;
+    position: fixed;
+    top: 12%;
+    left: 5%;
+}
+
+.pointV{
+    height: 100px;
+    position: fixed;
+    top: 17%;
+    left: 5%;
+}
+
+.pointH{
+    width: 100px;
+    position: fixed;
+    top: 70%;
+    left: 27%;
+}
+
+@media only screen and (min-width:1920px){
+
+    .model3{
+        width: 420px;
+        top: 21%;
+        left: 2%;
+    }
+
+    .pointV{
+        height: 150px;
+        left: 3%;
+        top: 22.5%;
+    }
+
+    .pointH{
+        width: 150px;
+        top: 70%;
+        left: 25%;
+    }
+
+    .start-point, .end-point, .vehicles{
+        width: 500px;
+    }
+    .start-point{
+        left: -82.5%;
+    }
+    .end-point{
+        top: 29.5%;
+        left: -5%;
+    }
+}
+
+@media only screen and (max-width:1280px){
+
+    .model3{
+        width: 420px;
+        top: 16%;
+    }
+    .pointV{
+        top: 25%;
+    }
+    .pointH{
+        left: 33%;
+    }
+
+    .end-point{
+        top: 29%;
+        left: 5%;
+    }
+}

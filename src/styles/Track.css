@@ -1,5 +1,7 @@
 .all-track-container{
-    height: calc( 100vh - 92px - 130px);
+    min-height: calc( 100vh - 92px - 130px);
+    max-height: 100%;
+    box-sizing: border-box;
 }
 
 .model4{
@@ -23,13 +25,17 @@
 
 .track-search-container{
     display: grid;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 50%;
+
 }
 
 .title-track{
    width: 1000px; 
-   position: relative;
-   top: 40%;
-   left: 5%;
+   position: absolute;
+   top: 22.5%;
+   left: 3%;
 }
 
 .campo-track{
@@ -54,26 +60,66 @@
     left: 50%;
 }
 
-.btn-track{
-    background-color: var(--my-secondary-color);
-    color: var(--my-primary-color);
-    padding: 20px 50px 20px 50px;
-    border: none;
-    border-radius: 50px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: relative;
-    top: 180%;
-    left: 25%;
-}
+
 
 
 @media only screen and (min-width:1920px){
+
+    .title-track{
+        font-size: 3.2rem;
+        left: 6%;
+    }
     .model4{
-        width: 200px;
-        top: -55px;
-        left: 65%;
+        width: 400px;
+        top: 15%;
+        left: 67%;
     
+    }
+
+    .vertical-points{
+        height: 150px;
+        top: 25%;
+    }
+
+    .horizontal-points{
+        min-width: 150px;
+        top: 70%;
+        left: 87%;
+    }
+
+    .campo-track{
+        width: 820px;
+        top: 41%;
+    }
+
+    .btn-track{
+        padding: 25px 100px 25px 100px;
+        font-size: 1.6rem;
+        top: 62.5%;
+        left: 22.5%;
+    }
+
+    
+}
+
+@media only screen and (max-width:1280px){
+    .model4{
+        width: 350px;
+        top: 18%;
+        left: 65%;
+    }
+
+    .vertical-points{
+        top: 30%;
+    }
+
+    .horizontal-points{
+        top: 75%;
+        left: 89.5%;
+    }
+
+    .bi-search{
+        top: 42.5%;
+        left: 53%;
     }
 }

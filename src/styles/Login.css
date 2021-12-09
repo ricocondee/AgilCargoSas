@@ -5,45 +5,59 @@
 }
 
 .login-page-contain{
-    height: calc( 100vh - 92px - 130px);
+    min-height: calc( 100vh - 92px - 130px);
+    height: 100vh;
 }
 
 .model-contain{
+    width: 50%;
     position: relative;
+    top: 10%;
+    left: 10%;
+    box-sizing: border-box;
 }
 
 .model-2{
-    position: fixed;
-    width: 260px;
+    width: 360px;
     z-index: 1;
-    left: 15%;
-    top: 15%;
 }
 
 .behind-figures{
-    position: fixed;
-    width: 450px;
+    position: absolute;
+    width: 550px;
     top: 20%;
-    left: 7%;
+    left: -15%;
+    z-index: -1;
 }
 
 
 .form-contain{
-    position: relative;
+    width: 500px;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    position: absolute;
     display: grid;
     justify-content: center;
     text-align: center;
     float: right;
-    left: -15%;
+    top: 32.5%;
+    left: 55.5%;
+}
+
+.formu-login{
+    width: 450px;
 }
 
 .title-login{
-    display: grid;
+    font-size: 3rem;
     text-transform: uppercase;
-    padding:  10px 0 0 0;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
 }
 
 .campo-email, .campo-password{
+    width: 100%;
     background-color: var(--my-light-color);
     border: 5px solid var(--my-secondary-color);
     border-radius: 50px;
@@ -54,80 +68,78 @@
     box-sizing: border-box;
     box-shadow: 1px 4px 10px -2px rgba(128, 128, 128, 0.76);
     padding: 5px 0 5px 0;
-    width: 400px;
+    
 }
 
-.text-email{
+.text-email, .text-password{
     font-weight: bold;
-    font-size: 1.2rem;
-    padding:  0 0 10px 0;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    padding: 5px;
     color: var(--my-primary-color);
 }
 
-.text-password{
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding:  10px 0 10px 0;
-    color: var(--my-primary-color);
-}
 
-.btn-send{
-    margin: 20px 0 20px 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    padding: 15px 50px 15px 50px;
-    border-radius: 50px;
-    border: none;
-    color: var(--my-primary-color);
-    background-color: var(--my-secondary-color);
-    box-shadow: 1px 4px 10px -2px rgba(128, 128, 128, 0.76);
+
+.btn-show{
+    position: fixed;
+    top: 47%;
+    left: 82.5%;
+    display: none;
 }
 
 .bi-eye-fill, .bi-eye-slash-fill{
     font-size: 1.5rem;
-    position: fixed;
-    top: 45.5%;
-    left: 82%;
+    position: absolute;
+    top: 53.5%;
+    left: 87%;
     color: var(--my-primary-color);
-}
-.bi-eye-slash-fill{
-    display: none;
+    cursor: pointer;
 }
 
 .you-forgot-pass{
     color: var(--my-primary-color);
     display: grid;
     margin-bottom: 10px;
+    margin: 0 auto;
 }
 .signup{
-    color: var(--my-primary-color)
+    color: var(--my-primary-color);
+    margin: 0 auto;
 }
 
 
 
 @media only screen and (min-width:1920px) {
-    .model-2{
-        width: 420px;
-        z-index: 1;
-        left: 15%;
-        top: 15%;
+
+    .model-contain{
+        top: 12.5%;
     }
 
+    .model-2{
+        width: 520px;
+        z-index: 1;
+}
+
     .behind-figures{
-        top: 25%;
-        left: 6%;
-        width: 700px;
+        top: 22%;
+        left: -16%;
+        width: 800px;
     }
     
     .form-contain{
-        width: 60%;
-        top: 15%;
-        left: -5%;
+        width: 700px;
+        top: 35%;
+        left: 45%;
+        zoom: 120%;
+    }
+
+    .formu-login{
+        width: 100%;
     }
 
     .title-login{
-        font-size: 3.8rem;
+        font-size: 3.2rem;
     }
     
     .campo-email, .campo-password{
@@ -145,18 +157,67 @@
     .btn-send{
         font-size: 1.8rem;
     }
+
+    .btn-show{
+        top: 48%;
+        left: 75%;
+    }
     
     .bi-eye-fill, .bi-eye-slash-fill{
         font-size: 1.8rem;
-        top: 47%;
-        left: 74.5%;
-    }
-    .bi-eye-slash-fill{
-        display: none;
+        top: 49.5%;
+        left: 77.5%;
     }
     
     .you-forgot-pass, .signup{
         font-size: 1.3rem;
         margin-bottom: 10px;
     }
+}
+
+
+@media only screen and (max-width:1280px) {
+
+    .model-contain{
+        left: 7%;
+    }
+
+    .model-2{
+        min-width: 500px;
+    }
+    .behind-figures{
+        width: 700px;
+        top: 25%;
+        left: -15%;
+    }
+
+    .form-contain{
+        width: 600px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        display: flex;
+        top: 42.5%;
+        left: 50%;
+    }
+
+    .title-login{
+        font-size: 3.6rem;
+        margin: 0 auto;
+    }
+
+    .formu-login{
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .campo-email,.campo-password{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .bi-eye-fill, .bi-eye-slash-fill{
+        top: 54.5%;
+        left: 89%;
+    }
+
 }
