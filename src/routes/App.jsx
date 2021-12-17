@@ -9,6 +9,7 @@ import Track from '@pages/Track'
 import Budget from '@pages/Budget'
 import Order from '@pages/Order'
 import Contact from '@pages/Contact'
+import Dashboard from '@pages/Dashboard'
 import Layout from '@containers/Layout'
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
                 <Route exact path='/budget' component={Budget}/>
                 <Route exact path='/order' component={Order}/>
                 <Route exact path='/contact' component={Contact}/>
+                <Route exact path='/Dashboard' component={Dashboard}/>
             </Switch>
         </Layout>
     </BrowserRouter>            
