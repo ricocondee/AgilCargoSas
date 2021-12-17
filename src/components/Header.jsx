@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Logo from "@assets/logo.png"
 import ProfileOptions from '@components/ProfileOptions'
-import '@styles/header.css'
+import '@styles/Header.css'
 
 const Header = () => {
     const [menu, setMenu] = useState(false);
