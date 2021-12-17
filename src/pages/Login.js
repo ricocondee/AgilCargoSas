@@ -36,8 +36,8 @@ const Login = () => {
                     <input type="checkbox" className="btn-show" id="btn-show" />
                     <label htmlFor="btn-show" onClick={showPassword}><i className="bi bi-eye-fill" id="show-pass"></i></label>
                     <Button/>
-                    <NavLink to="/recovery-password" className="you-forgot-pass">¿Olvidaste tu contraseña?</NavLink>
-                    <NavLink to="/signup" className="signup">Registrarse</NavLink>
+                    <NavLink to="/" className="you-forgot-pass">¿Olvidaste tu contraseña?</NavLink>
+                    <a href="#/signup" className="signup">Registrarse</a>
                 </form>
             </div>
             <div className="model-contain">
