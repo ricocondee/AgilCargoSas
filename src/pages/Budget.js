@@ -63,7 +63,7 @@ const Budget = () => {
                         <option id="villavicencio-start">Villavicencio</option>
                         <option id="yopal-start">Yopal</option>
                     </select>
-                    <select name="end-point" className="start-point" id="end-point">
+                    <select name="end-point" className="end-point" id="end-point">
                         <option selected>Seleccionar punto de destino</option>
                         <option id="arauca-end">Arauca</option>
                         <option id="armenia-end">Armenia</option>

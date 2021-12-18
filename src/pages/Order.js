@@ -99,7 +99,7 @@ const Order = () => {
                         <option id="villavicencio-end">Villavicencio</option>
                         <option id="yopal-end">Yopal</option>
                     </select>
-                    <select name="vehicles" className="vehicles" id="vehicles">
+                    <select name="vehicles" className="select-order-first" id="vehicles">
                         <option selected>Vehiculos a usar</option>
                         <option id="vehicle-one">1</option>
                         <option id="vehicle-two">2</option>
