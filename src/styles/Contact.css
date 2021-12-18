@@ -30,3 +30,11 @@
     margin-bottom: 20px;
 }
 
+.btn-enviar{
+    padding: 20px 100px 20px 100px;
+    background-color: var(--my-secondary-color);
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    left: 5.5%;
+}

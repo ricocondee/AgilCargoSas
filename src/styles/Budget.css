@@ -61,7 +61,18 @@ option{
     left: -45%;
 }
 
-
+.btn-budget{
+    background-color: var(--my-secondary-color);
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--my-primary-color);
+    position: relative;
+    top: 40%;
+    left: -31%;
+    padding: 20px 100px 20px 100px;
+}
 
 .result-budget-container{
     display: flex;

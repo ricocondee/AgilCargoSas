@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom'
 import model2 from '@assets/model2.png'
 import behindPoints from '@assets/behindPoints.png'
-import Button from '@components/Button'
 import '@styles/Login.css'
 
 var textButton = "Ingresar"
@@ -35,7 +34,7 @@ const Login = () => {
                     <input type="password" className="campo-password" id="password" placeholder=" * * * * * * * *" />
                     <input type="checkbox" className="btn-show" id="btn-show" />
                     <label htmlFor="btn-show" onClick={showPassword}><i className="bi bi-eye-fill" id="show-pass"></i></label>
-                    <Button/>
+                    <input type="submit" className="btn-send" name="btn-send" id="btn-send" value="Ingresar" />
                     <NavLink to="/" className="you-forgot-pass">¿Olvidaste tu contraseña?</NavLink>
                     <a href="#/signup" className="signup">Registrarse</a>
                 </form>

@@ -82,6 +82,18 @@ option{
 
 }
 
+.btn-order{
+    background-color: var(--my-secondary-color);
+    width:100%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--my-primary-color);
+}
+
 @media only screen and (min-width:1920px){
     .order-container{
         top: 25%;
