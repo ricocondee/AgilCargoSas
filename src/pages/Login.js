@@ -26,7 +26,7 @@ const Login = () => {
     return (
         <div className="login-page-contain">
             <div className="form-contain">
-                <form action="" className="formu-login">
+                <form action="/login" className="formu-login">
                     <h1 className="title-login">Iniciar Sesion</h1>
                     <label className="text-email">Email</label>
                     <input type="text" className="campo-email" id="email" placeholder="tu@correo.com" />
@@ -36,7 +36,7 @@ const Login = () => {
                     <label htmlFor="btn-show" onClick={showPassword}><i className="bi bi-eye-fill" id="show-pass"></i></label>
                     <input type="submit" className="btn-send" name="btn-send" id="btn-send" value="Ingresar" />
                     <NavLink to="/" className="you-forgot-pass">¿Olvidaste tu contraseña?</NavLink>
-                    <a href="#/signup" className="signup">Registrarse</a>
+                    <a href="/signup" className="signup">Registrarse</a>
                 </form>
             </div>
             <div className="model-contain">

@@ -9,7 +9,7 @@ const Track = () => {
     return (
         <section className="all-track-container">
             <div className="track-search-container">
-                <form action="">
+                <form action="/track">
                     <h1 className="title-track">¿Quieres saber donde est&aacute; tu env&iacute;o?</h1>
                     <input type="number" className="campo-track" placeholder="Ingresa el n&uacute;mero de gu&iacute;a de tu env&iacute;o." />
                     <i className="bi bi-search"></i>
