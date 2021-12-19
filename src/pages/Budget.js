@@ -28,7 +28,7 @@ const Budget = () => {
             <div className="budget-search-container" id="search-id">
                 <h1 className="title-budget"> Cotiza aqu&iacute; tu env&iacute;o</h1>
                 <form action="/budget" method="" className="my-form" >
-                    <select name="start-point" className="start-point" id="start-point">
+                    <select name="firstPoint" className="start-point" id="start-point">
                         <option selected>Seleccionar punto de origen</option>
                         <option id="arauca-start">Arauca</option>
                         <option id="armenia-start">Armenia</option>
@@ -63,7 +63,7 @@ const Budget = () => {
                         <option id="villavicencio-start">Villavicencio</option>
                         <option id="yopal-start">Yopal</option>
                     </select>
-                    <select name="end-point" className="end-point" id="end-point">
+                    <select name="lastPoint" className="end-point" id="end-point">
                         <option selected>Seleccionar punto de destino</option>
                         <option id="arauca-end">Arauca</option>
                         <option id="armenia-end">Armenia</option>
@@ -98,7 +98,7 @@ const Budget = () => {
                         <option id="villavicencio-end">Villavicencio</option>
                         <option id="yopal-end">Yopal</option>
                     </select>
-                    <select name="vehicles" className="vehicles" id="vehicles">
+                    <select name="vehiclesBudget" className="vehicles" id="vehicles">
                         <option selected>Vehiculos a usar</option>
                         <option id="vehicle-one">1</option>
                         <option id="vehicle-two">2</option>

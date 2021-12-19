@@ -216,23 +216,109 @@ option{
         top: 29.5%;
         left: -5%;
     }
+    .result-budget-container{
+        width: 80%;
+        height: 50%;
+    }
+    .result{
+        top: 45%;
+        left: 30%;
+    }
+    .title-result{
+        left: 45%;
+    }
+    .icon-right-one{
+        top: 24.5%;
+        left: 94%;
+    }
+    .icon-right-two{
+        top: 45%;
+        left: 94%;
+    }
+    
+    .icon-right-tree{
+        top: 66%;
+        left: 94%;
+    }
+    .icon-left-one{
+        top: 25%;
+        left: 54.5%;
+    }
+    .icon-left-two{
+        top: 43.5%;
+        left: 54.5%;
+    }
+    
+    .icon-left-tree{
+        top: 66%;
+        left: 54.5%;
+    }
+    .btn-agendar{
+        font-size: 1.5rem;
+        left: 44%;
+    }
 }
 
 @media only screen and (max-width:1280px){
 
+    .title-budget{
+        top: 22%;
+        left: 30%;
+    }
+
     .model3{
         width: 420px;
         top: 16%;
+        left: 2%;
     }
     .pointV{
         top: 25%;
     }
     .pointH{
-        left: 33%;
+        left: 36%;
     }
 
     .end-point{
         top: 29%;
         left: 5%;
+    }
+
+    .result{
+        width: 70%;
+        top: 25%;
+        left: 30%;
+    }
+    .title-result{
+        left: 36%;
+    }
+    .icon-right-one{
+        top: 12%;
+        left: 93%;
+    }
+    .icon-right-two{
+        top: 23%;
+        left: 93%;
+    }
+    
+    .icon-right-tree{
+        top: 34.5%;
+        left: 93%;
+    }
+    .icon-left-one{
+        top: 12%;
+        left: 45%;
+    }
+    .icon-left-two{
+        top: 22%;
+        left: 45%;
+    }
+    
+    .icon-left-tree{
+        top: 34%;
+        left: 45%;
+    }
+    .btn-agendar{
+        font-size: 1.5rem;
+        left: 32%;
     }
 }

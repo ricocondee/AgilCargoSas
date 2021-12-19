@@ -22,7 +22,7 @@ const SignUp = () => {
                         <label className="label-pass">Contraseña</label>
                         <input type="password" name="password" className="pass" placeholder="* * * * * * *" />
                         <label className="label-pass">Confirmar Contraseña</label>
-                        <input type="password" className="pass" placeholder="* * * * * * *" />
+                        <input name="confirmPass"type="password" className="pass" placeholder="* * * * * * *" />
                     </div>
 
                     <button className="btn-signup">Registrarme</button>

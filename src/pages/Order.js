@@ -23,13 +23,13 @@ const Order = () => {
             <div className="order-container">
                 <h1 className="title-order">Solicitar recogida de tu envio</h1>
                 <form action="/order" className="order-form">
-                    <input type="text" className="select-order-first imput" placeholder="Nombres y apellidos del destinatario" />
-                    <select name="" id="" className="select-order-first">
+                    <input type="text" name="namesDest" className="select-order-first imput" placeholder="Nombres y apellidos del destinatario" />
+                    <select name="documentType" id="" className="select-order-first">
                         <option value="" selected>Seleccciona tu tipo de documento</option>
                         <option value="">CC: Cedula de Ciudadania</option>
                     </select>
-                    <input type="number" className="select-order-first imput" placeholder="ingresa tu numero de documento" maxLength={10} />
-                    <select name="start-point" className="select-order-first" id="start-point">
+                    <input name="document" type="number" className="select-order-first imput" placeholder="ingresa tu numero de documento" maxLength={10} />
+                    <select name="startPoint" className="select-order-first" id="start-point">
                         <option selected>Seleccionar punto de origen</option>
                         <option id="arauca-start">Arauca</option>
                         <option id="armenia-start">Armenia</option>
@@ -64,7 +64,7 @@ const Order = () => {
                         <option id="villavicencio-start">Villavicencio</option>
                         <option id="yopal-start">Yopal</option>
                     </select>
-                    <select name="end-point" className="select-order-first" id="end-point">
+                    <select name="endPoint" className="select-order-first" id="end-point">
                         <option selected>Seleccionar punto de destino</option>
                         <option id="arauca-end">Arauca</option>
                         <option id="armenia-end">Armenia</option>
@@ -113,7 +113,7 @@ const Order = () => {
                         <option id="vehicle-ten">10</option>
                     </select>
                     <input type="text" className="select-order-first imput" id="datetime" name="datetime" min="2021-01-01T00:00" max="2030-12-31T00:00" onClick={changeType} placeholder="Fecha y hora de recogida" />
-                    <select name="" id="" className="select-order-first">
+                    <select name="paymentMethod" id="" className="select-order-first">
                         <option value="" selected>Metodo de pago</option>
                         <option value="">Efectivo: pago en el lugar</option>
                     </select>
