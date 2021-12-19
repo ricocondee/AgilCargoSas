@@ -14,12 +14,12 @@ const Header = () => {
                 <nav className="nav-header ">
                     <div className="ul-container">
                         <ul>
-                            <li><a href="/track-shipping" id="rastrear">Rastrear</a></li>
-                            <li><a href="/budget" id="cotizar">Cotizar</a></li>
+                            <li><a href="#/track-shipping" id="rastrear">Rastrear</a></li>
+                            <li><a href="#/budget" id="cotizar">Cotizar</a></li>
                             <li className="logo"><img src={Logo} onClick={handleMenu}/></li>
-                            <li><a href="/" id="inicio">Inicio</a></li>
-                            <li><a href="/contact" id="contacto">Contacto</a></li>
-                            <i><a href="/login" id="btn-login">Ingresar</a></i>
+                            <li><a href="#/" id="inicio">Inicio</a></li>
+                            <li><a href="#/contact" id="contacto">Contacto</a></li>
+                            <i><a href="#/login" id="btn-login">Ingresar</a></i>
                         </ul>
                     </div>
                 </nav>

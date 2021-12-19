@@ -36,7 +36,7 @@ const Login = () => {
                     <label htmlFor="btn-show" onClick={showPassword}><i className="bi bi-eye-fill" id="show-pass"></i></label>
                     <input type="submit" className="btn-send" name="btn-send" id="btn-send" value="Ingresar" />
                     <NavLink to="/" className="you-forgot-pass">¿Olvidaste tu contraseña?</NavLink>
-                    <a href="/signup" className="signup">Registrarse</a>
+                    <a href="#/signup" className="signup">Registrarse</a>
                 </form>
             </div>
             <div className="model-contain">
