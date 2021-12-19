@@ -29,9 +29,9 @@ const Login = () => {
                 <form action="/login" className="formu-login">
                     <h1 className="title-login">Iniciar Sesion</h1>
                     <label className="text-email">Email</label>
-                    <input type="text" className="campo-email" id="email" placeholder="tu@correo.com" />
+                    <input type="text" className="campo-email" name="emailLogin" id="email" placeholder="tu@correo.com" />
                     <label className="text-password">Contraseña</label>
-                    <input type="password" className="campo-password" id="password" placeholder=" * * * * * * * *" />
+                    <input type="password" className="campo-password" name="passwordLogin" id="password" placeholder=" * * * * * * * *" />
                     <input type="checkbox" className="btn-show" id="btn-show" />
                     <label htmlFor="btn-show" onClick={showPassword}><i className="bi bi-eye-fill" id="show-pass"></i></label>
                     <input type="submit" className="btn-send" name="btn-send" id="btn-send" value="Ingresar" />

@@ -108,16 +108,16 @@ const Dashboard = () => {
                     <div className="card-body">
                         <form action="/dashboard">
                             <div className="mb-3">
-                                <input type="text" className="form-control" id="origin-point" placeholder="Punto de origen" />
+                                <input type="text" className="form-control" name="originPoint" placeholder="Punto de origen" />
                             </div>
                             <div className="mb-3">
-                                <input type="text" className="form-control" id="destinate-point" placeholder="Punto de destino" />
+                                <input type="text" className="form-control" name="destinatePoint" placeholder="Punto de destino" />
                             </div>
                             <div className="mb-3">
-                                <input type="number" className="form-control" id="distance" placeholder="Distancia a recorrer (km)" />
+                                <input type="number" className="form-control" name="distance" placeholder="Distancia a recorrer (km)" />
                             </div>
                             <div className="mb-3">
-                                <input type="number" className="form-control" id="time" placeholder="Tiempo de entrega estimado (hrs)"/>
+                                <input type="number" className="form-control" name="time" placeholder="Tiempo de entrega estimado (hrs)"/>
                             </div>
                             <button type="submit" className="btn btn-primary">Submit</button>
                         </form>
