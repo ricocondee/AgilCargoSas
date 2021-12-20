@@ -26,7 +26,7 @@ const Login = () => {
     return (
         <div className="login-page-contain">
             <div className="form-contain">
-                <form action="/login" className="formu-login">
+                <form action="#/login" className="formu-login">
                     <h1 className="title-login">Iniciar Sesion</h1>
                     <label className="text-email">Email</label>
                     <input type="text" className="campo-email" name="emailLogin" id="email" placeholder="tu@correo.com" />

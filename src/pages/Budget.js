@@ -27,7 +27,7 @@ const Budget = () => {
         <section className="all-budget-container">
             <div className="budget-search-container" id="search-id">
                 <h1 className="title-budget"> Cotiza aqu&iacute; tu env&iacute;o</h1>
-                <form action="/budget" method="" className="my-form" >
+                <form action="#/budget" method="" className="my-form" >
                     <select name="firstPoint" className="start-point" id="start-point">
                         <option selected>Seleccionar punto de origen</option>
                         <option id="arauca-start">Arauca</option>

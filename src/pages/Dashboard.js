@@ -106,7 +106,7 @@ const Dashboard = () => {
                         <h2>Ingresar Puntos de origen y destino</h2>
                     </div>
                     <div className="card-body">
-                        <form action="/dashboard">
+                        <form action="#/dashboard">
                             <div className="mb-3">
                                 <input type="text" className="form-control" name="originPoint" placeholder="Punto de origen" />
                             </div>

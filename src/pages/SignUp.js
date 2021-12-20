@@ -12,7 +12,7 @@ const SignUp = () => {
             </div>
 
             <div className="signup-form-contain">
-                <form action="/signup" className="formu-login">
+                <form action="#/signup" className="formu-login">
                     <h1 className="title-signup">Registrate</h1>
                     <div className="inputs">
                         <label className="label-name">Nombre</label>

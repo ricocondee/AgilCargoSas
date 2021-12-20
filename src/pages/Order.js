@@ -22,7 +22,7 @@ const Order = () => {
         <section className="all-order-container">
             <div className="order-container">
                 <h1 className="title-order">Solicitar recogida de tu envio</h1>
-                <form action="/order" className="order-form">
+                <form action="#/order" className="order-form">
                     <input type="text" name="namesDest" className="select-order-first imput" placeholder="Nombres y apellidos del destinatario" />
                     <select name="documentType" id="" className="select-order-first">
                         <option value="" selected>Seleccciona tu tipo de documento</option>
